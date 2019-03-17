@@ -13,7 +13,7 @@ let survey = [
     },
     {
         id: 'Q4',
-        question: ' Dinosaurs are (well, were) real.'
+        question: 'Dinosaurs are (well, were) real.'
     },
     {
         id: 'Q5',

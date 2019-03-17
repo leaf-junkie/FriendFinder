@@ -6,8 +6,6 @@ const apiRoutes = require('./app/routing/apiRoutes');
 const app = express();
 const instance = M.Modal.getInstance(elem);
 
-
-
 const PORT = process.env.PORT || 8080;
 
 // change whatever your path is - allows you to use images and custom css on heroku
