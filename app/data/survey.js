@@ -39,4 +39,6 @@ let survey = [
         id: 'Q10',
          question: 'The government should require children to be vaccinated for preventable diseases.'
    },
-]
+];
+
+module.exports = survey;

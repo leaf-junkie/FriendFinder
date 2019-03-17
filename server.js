@@ -1,7 +1,12 @@
-const foundation = require('foundation');
 const express = require('express');
 const path = require('path');
+const survey = require('./app/data/survey');
+const friends = require('./app/data/friends');
+const apiRoutes = require('./app/routing/apiRoutes');
 const app = express();
+const instance = M.Modal.getInstance(elem);
+
+
 
 const PORT = process.env.PORT || 8080;
 
@@ -10,14 +15,10 @@ app.use(express.static(path.join(__dirname, './app/public')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-connection.connect((err) => {
-    if (err) {
-      console.error(`Error connecting: ${err.stack}`);
-      return;
-    }
-    console.log(`Connected as id: ${connection.threadId}`);
-});
+app.use(apiRoutes);
 
 app.listen(PORT, () => {
     console.log(`Server listening on: http://localhost:${PORT}`);
 });
+
+module.exports = app;

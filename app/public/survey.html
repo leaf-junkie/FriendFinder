@@ -5,26 +5,121 @@
 <!doctype html>
 <html>
     <head>
-        <title>Friend Finder</title>
+        <title>Kinspir</title>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="../assets/style.css">
     </head>
     <body>
         <header>
-            <h1>Friend Finder</h1>
-            <h2>Survey</h2>
-            <h2>Answer these questions to see who you match with!</h2>
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="home.html" class="brand-logo">Kinspir</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="survey.html">Survey</a></li>
+                    </ul>
+                </div>
+            </nav>
+        
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="survey.html">Survey</a></li>
+            </ul>
+            <a href="#!" class="collection-item"><span class="new badge">4</span></a>
+            <h3>Survey</h3>
+            <h4>Answer these questions to see who you match with!</h4>
         </header>
-        <section>
-            <div id='questions'>
+        <main>
+            <!-- Questions -->
+            <div id="questions">
                 <div class="question-div">
                     <h3 class="question"></h3>
-                    <div class="options">
-
+                    <div class="options-div">
+                        <form id="options" action="#">
+                            <p>
+                                <label>
+                                <input name="group1" type="radio"/>
+                                <span>1 - Strongly disagree</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                <input name="group1" type="radio"/>
+                                <span>2 - Disagree</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                <input name="group1" type="radio"/>
+                                <span>3 - Not sure</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                <input name="group1" type="radio"/>
+                                <span>4 - Agree</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                <input name="group1" type="radio"/>
+                                <span>5 - Strongly agree</span>
+                                </label>
+                            </p>
+                        </form>
                     </div>
                 </div>
             </div>
-        </section>
+            <!-- Modal Trigger -->
+            <button data-target="modal1" class="btn modal-trigger">View Matches</button>
+            <!-- Modal -->
+            <div id="modal" style="visibility:hidden">
+                <div class="row">
+                    <div class="col s12 m7">
+                        <div class="card">
+                            <div class="card-image">
+                                <img id="person_photo" src="">
+                                <span id="person_name" class="card-title"></span>
+                            </div>
+                            <div class="card-content">
+                                <p id="person_summary"></p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">View profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </main>
         <footer>
-
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Footer Content</h5>
+                        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Links</h5>
+                        <!-- <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                        </ul> -->
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2019 Julie Ragsdale
+                    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                </div>
+            </div>
         </footer>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </body>
 </html>
