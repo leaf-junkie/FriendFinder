@@ -17,3 +17,7 @@ footer {
 .question-div {
     margin-bottom: 1rem;
 }
+
+#homeBackground {
+    background-image: url('friends.jpg');
+}

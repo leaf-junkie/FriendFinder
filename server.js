@@ -10,6 +10,7 @@ const PORT = process.env.PORT || 8080;
 
 // change whatever your path is - allows you to use images and custom css on heroku
 app.use(express.static(path.join(__dirname, './app/public')));
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 

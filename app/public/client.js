@@ -3,7 +3,7 @@ $(document).ready(function(){
     // The modal should display both the name and picture of the closest match.
     
     $('#submitButton').on('click', function(event) {
-        event.preventDefault();
+        // event.preventDefault();
 
         $('#bestMatch').addClass('is-active');
         $(function() {
