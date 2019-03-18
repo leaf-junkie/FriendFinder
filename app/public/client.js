@@ -44,28 +44,28 @@ $(document).ready(function(){
     });
 
     // Tally up responses from survey
-    function computeScore() {
-        let score = 0;
-        for (q = 0; q = 10; q++) {
-            switch(score) {
-                case $('.opt1'):
-                    score += 1;
-                    break;
-                case $('.opt2'):
-                    score += 2;
-                    break
-                case $('.opt3'):
-                    score += 3;
-                    break;
-                case $('.opt4'):
-                    score += 4;
-                    break;
-                case $('.opt5'):
-                    score += 5;
-                    break;
-            }
-        }
-        console.log(`Your score: ${score}`);
-    }
-    computeScore();
+    // function computeScore() {
+    //     let score = 0;
+    //     for (q = 0; q = 10; q++) {
+    //         switch(score) {
+    //             case $('.opt1'):
+    //                 score += 1;
+    //                 break;
+    //             case $('.opt2'):
+    //                 score += 2;
+    //                 break
+    //             case $('.opt3'):
+    //                 score += 3;
+    //                 break;
+    //             case $('.opt4'):
+    //                 score += 4;
+    //                 break;
+    //             case $('.opt5'):
+    //                 score += 5;
+    //                 break;
+    //         }
+    //     }
+    //     console.log(`Your score: ${score}`);
+    // }
+    // computeScore();
 });
