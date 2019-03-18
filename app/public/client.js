@@ -64,8 +64,8 @@ $(document).ready(function(){
                     score += 5;
                     break;
             }
-        console.log(`Your score: ${score}`);
         }
+        console.log(`Your score: ${score}`);
     }
     computeScore();
 });
