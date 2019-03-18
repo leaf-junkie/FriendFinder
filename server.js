@@ -4,7 +4,6 @@ const survey = require('./app/data/survey');
 const friends = require('./app/data/friends');
 const apiRoutes = require('./app/routing/apiRoutes');
 const app = express();
-const instance = M.Modal.getInstance(elem);
 
 const PORT = process.env.PORT || 8080;
 
