@@ -9,7 +9,6 @@ $(document).ready(function(){
         $(function() {
             // Set up an event listener for the contact form
             $(form).submit(function(event) {
-                event.preventDefault();
     
                 // Get the form
                 var form = $('#form');
