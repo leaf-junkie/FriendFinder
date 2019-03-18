@@ -18,6 +18,10 @@ footer {
     margin-bottom: 1rem;
 }
 
-#homeBackground {
-    background-image: url('friends.jpg');
+/* style all elements with a required attribute */
+:required {
+    background: red;
 }
+/* #homeBackground {
+    background-image: url('friends.jpg');
+} */

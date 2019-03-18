@@ -5,7 +5,8 @@ const path = require('path');
 
 // A default, catch-all route that leads to home.html which displays the home page.
 router.get('/', function(req, res) {
-    res.send("home");
+    const html = fs.readFileSync(path.join(__dirname,'../public/home.html'));
+    res.send(html.toString());
 });
 
 // A GET Route to /survey which should display the survey page.

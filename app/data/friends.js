@@ -122,37 +122,31 @@ let people = [
     }
 ];
 
-// calculate difference between scores
-function compareScores(person1, person2) {
-    let totalDifference = 0;
-    for(p = 0; p < 10; p++) {
-        let difference = Math.abs(person1.scores[p] - person2.scores[p]);
-        totalDifference += difference;
-        console.log(totalDifference);
-    }
-}
-
-// compare scores of one person to all other people
-function compareAllScores() {
-    let minDifference = 0;
-    let friend = people[j];
+function findBestMatch(surveyResults) {
+    let minDifference = -1;
+    let bestMatch;
+    // for each person
     for (let i = 0; i < people.length; i++) {
-        for (let j = 0; j < people.length; j++) {
-            // prevent people from being compared to themselves
-            if (i != j) {
-                compareScores(people[i], people[j]);
+        let currentDifference = 0;
+        // for each question
+        for (let j = 0; j < people[i].scores.length; j++) {
+            if (surveyResults[`answer${j}`]) {
+                currentDifference += Math.abs(
+                    people[i].scores[j] - surveyResults[`answer${j}`]
+                );
+            } else {
+                console.log(`Cant calculate difference, user didnt answer: ${j}`);
             }
         }
-        // The closest match will be the user with the least amount of difference.
-        if (difference >= minDifference) {
-            minDifference = this.difference;
-            console.log(minDifference);
+        if (minDifference < 0 || currentDifference < minDifference) {
+            minDifference = currentDifference;
+            bestMatch = people[i];
         }
     }
+    return bestMatch;
 }
 
 module.exports = {
     people: people,
-    compareScores: compareScores,
-    compareAllScores: compareAllScores
+    findBestMatch: findBestMatch
 };
