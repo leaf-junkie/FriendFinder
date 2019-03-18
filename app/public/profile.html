@@ -1,76 +1,57 @@
 <!doctype html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Kinspir</title>
-        <!-- Compiled and minified CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
         <link rel="stylesheet" href="../assets/style.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     </head>
     <body>
-        <header>     
-            <nav>
-                <div class="nav-wrapper">
-                    <a href="home.html" class="brand-logo">Kinspir</a>
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="profile.html">Profile</a></li>
-                        <li><a href="survey.html">Survey</a></li>
-                    </ul>
+        <header>
+            <section class="hero is-danger is-bold">
+                <div class="hero-body">
+                    <div class="container has-text-center">
+                        <h1 class="title">
+                            Kinspir
+                        </h1>
+                    </div>
+                    <div class="hero-foot">
+                        <nav class="tabs">
+                            <div class="container">
+                                <ul>
+                                    <li><a href="home.html">Home</a></li>
+                                    <li><a href="survey.html">Survey</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
-            </nav>
-            
-            <ul class="sidenav" id="mobile-demo">
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="survey.html">Survey</a></li>    
-            </ul>
-            <a href="#!" class="collection-item"><span class="new badge">4</span></a>
+            </section>     
         </header>
         <main>
-            <div class="row">
-                <div class="col s12 m7">
-                    <div class="card">
-                        <div class="card-image">
-                            <img id="person_photo" src="https://i.pinimg.com/736x/89/3a/46/893a46c1342171696e35d1cf71240725.jpg">
-                            <span id="person_name" class="card-title"></span>
-                        </div>
-                        <div class="card-content">
-                            <p id="person_summary"></p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">View profile</a>
-                        </div>
+            <section class="section">
+                <div class="container columns">
+                    <div class="column">
+                        <img src="https://i.pinimg.com/736x/89/3a/46/893a46c1342171696e35d1cf71240725.jpg" style="width:250px">
+                        <h4>Julie</h4>
+                        <h4>24</h4>
+                        <a href="#">Edit profile</a>
                     </div>
-                </div>
-            </div>            
+                    <div class="column is-two-thirds">
+                        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. </h6>
+                        <h6>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. </h6>
+                        <h6>Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. </h6>
+                    </div>
+                </div>        
+            </section>
         </main>
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col l6 s12">
-                        <h5 class="white-text">Footer Content</h5>
-                        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-                    </div>
-                    <div class="col l4 offset-l2 s12">
-                        <h5 class="white-text">Links</h5>
-                        <!-- <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                        </ul> -->
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <div class="container">
-                    © 2019 Julie Ragsdale
-                    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-                </div>
+        <footer class="footer">
+            <div>
+                © 2019 Julie Ragsdale
             </div>
         </footer>
-        
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>   
     </body>
 </html>

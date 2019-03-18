@@ -1,37 +1,37 @@
-<!-- Your survey should have 10 questions of your choosing. 
-    Each answer should be on a scale of 1 to 5 based on how 
-    much the user agrees or disagrees with a question. -->
-
 <!doctype html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Kinspir</title>
-        <!-- Compiled and minified CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
         <link rel="stylesheet" href="../assets/style.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>        
     </head>
     <body>
         <header>
-            <nav>
-                <div class="nav-wrapper">
-                    <a href="home.html" class="brand-logo">Kinspir</a>
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="profile.html">Profile</a></li>
-                        <li><a href="survey.html">Survey</a></li>
-                    </ul>
+            <section class="hero is-danger is-bold">
+                <div class="hero-body">
+                    <div class="container has-text-center">
+                        <h1 class="title">
+                            Kinspir
+                        </h1>
+                    </div>
+                    <div class="hero-foot">
+                        <nav class="tabs">
+                            <div class="container">
+                                <ul>
+                                    <li><a href="home.html">Home</a></li>
+                                    <li><a href="profile.html">Profile</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
-            </nav>
-        
-            <ul class="sidenav" id="mobile-demo">
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="survey.html">Survey</a></li>
-            </ul>
-            <a href="#!" class="collection-item"><span class="new badge">4</span></a>
-            <h3>Survey</h3>
-            <h4>Answer these questions to see who you match with!</h4>
+            </section>     
         </header>
-        <main>
+        <main class="container section">
+            <h1 class="title">Survey</h1>
+            <h4 class="subtitle">Answer these questions to find your best match!</h4>
             <!-- Survey -->
             <div id="questions">
                 <div class="question-div">
@@ -39,32 +39,32 @@
                     <div class="options-div">
                         <form id="options" action="#">
                             <p>
-                                <label>
-                                <input name="group1" type="radio"/>
+                                <label class="radio">
+                                <input class="opt1" name="answer1" type="radio" value="1"/>
                                 <span>1 - Strongly disagree</span>
                                 </label>
                             </p>
                             <p>
-                                <label>
-                                <input name="group1" type="radio"/>
+                                <label class="radio">
+                                <input class="opt2" name="answer1" type="radio" value="2"/>
                                 <span>2 - Disagree</span>
                                 </label>
                             </p>
                             <p>
-                                <label>
-                                <input name="group1" type="radio"/>
+                                <label class="radio">
+                                <input class="opt3" name="answer1" type="radio" value="3"/>
                                 <span>3 - Not sure</span>
                                 </label>
                             </p>
                             <p>
-                                <label>
-                                <input name="group1" type="radio"/>
+                                <label class="radio">
+                                <input class="opt4" name="answer1" type="radio" value="4"/>
                                 <span>4 - Agree</span>
                                 </label>
                             </p>
                             <p>
-                                <label>
-                                <input name="group1" type="radio"/>
+                                <label class="radio">
+                                <input class="opt5" name="answer1" type="radio" value="5"/>
                                 <span>5 - Strongly agree</span>
                                 </label>
                             </p>
@@ -77,31 +77,31 @@
                         <form id="options" action="#">
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt1" name="answer2" type="radio" value="1"/>
                                 <span>1 - Strongly disagree</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt2" name="answer2" type="radio" value="2"/>
                                 <span>2 - Disagree</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt3" name="answer2" type="radio" value="3"/>
                                 <span>3 - Not sure</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt4" name="answer2" type="radio" value="4"/>
                                 <span>4 - Agree</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt5" name="answer2" type="radio" value="5"/>
                                 <span>5 - Strongly agree</span>
                                 </label>
                             </p>
@@ -114,31 +114,31 @@
                         <form id="options" action="#">
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt1" name="answer3" type="radio" value="1"/>
                                 <span>1 - Strongly disagree</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt2" name="answer3" type="radio" value="2"/>
                                 <span>2 - Disagree</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt3" name="answer3" type="radio" value="3"/>
                                 <span>3 - Not sure</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt4" name="answer3" type="radio" value="4"/>
                                 <span>4 - Agree</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt5" name="answer3" type="radio" value="5"/>
                                 <span>5 - Strongly agree</span>
                                 </label>
                             </p>
@@ -151,31 +151,31 @@
                         <form id="options" action="#">
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt1" name="answer4" type="radio" value="1"/>
                                 <span>1 - Strongly disagree</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt2" name="answer4" type="radio" value="2"/>
                                 <span>2 - Disagree</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt3" name="answer4" type="radio" value="3"/>
                                 <span>3 - Not sure</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt4" name="answer4" type="radio" value="4"/>
                                 <span>4 - Agree</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt5" name="answer4" type="radio" value="5"/>
                                 <span>5 - Strongly agree</span>
                                 </label>
                             </p>
@@ -188,31 +188,31 @@
                         <form id="options" action="#">
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt1" name="answer5" type="radio" value="1"/>
                                 <span>1 - Strongly disagree</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt2" name="answer5" type="radio" value="2"/>
                                 <span>2 - Disagree</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt3" name="answer5" type="radio" value="3"/>
                                 <span>3 - Not sure</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt4" name="answer5" type="radio" value="4"/>
                                 <span>4 - Agree</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt5" name="answer5" type="radio" value="5"/>
                                 <span>5 - Strongly agree</span>
                                 </label>
                             </p>
@@ -225,31 +225,31 @@
                         <form id="options" action="#">
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt1" name="answer6" type="radio" value="1"/>
                                 <span>1 - Strongly disagree</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt2" name="answer6" type="radio" value="2"/>
                                 <span>2 - Disagree</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt3" name="answer6" type="radio" value="3"/>
                                 <span>3 - Not sure</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt4" name="answer6" type="radio" value="4"/>
                                 <span>4 - Agree</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt5" name="answer6" type="radio" value="5"/>
                                 <span>5 - Strongly agree</span>
                                 </label>
                             </p>
@@ -262,31 +262,31 @@
                         <form id="options" action="#">
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt1" name="answer7" type="radio" value="1"/>
                                 <span>1 - Strongly disagree</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt2" name="answer7" type="radio" value="2"/>
                                 <span>2 - Disagree</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt3" name="answer7" type="radio" value="3"/>
                                 <span>3 - Not sure</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt4" name="answer7" type="radio" value="4"/>
                                 <span>4 - Agree</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt5" name="answer7" type="radio" value="5"/>
                                 <span>5 - Strongly agree</span>
                                 </label>
                             </p>
@@ -299,31 +299,31 @@
                         <form id="options" action="#">
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt1" name="answer8" type="radio" value="1"/>
                                 <span>1 - Strongly disagree</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt2" name="answer8" type="radio" value="2"/>
                                 <span>2 - Disagree</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt3" name="answer8" type="radio" value="3"/>
                                 <span>3 - Not sure</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt4" name="answer8" type="radio" value="4"/>
                                 <span>4 - Agree</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt5" name="answer8" type="radio" value="5"/>
                                 <span>5 - Strongly agree</span>
                                 </label>
                             </p>
@@ -336,31 +336,31 @@
                         <form id="options" action="#">
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt1" name="answer9" type="radio" value="1"/>
                                 <span>1 - Strongly disagree</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt2" name="answer9" type="radio" value="2"/>
                                 <span>2 - Disagree</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt3" name="answer9" type="radio" value="3"/>
                                 <span>3 - Not sure</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt4" name="answer9" type="radio" value="4"/>
                                 <span>4 - Agree</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt5" name="answer9" type="radio" value="5"/>
                                 <span>5 - Strongly agree</span>
                                 </label>
                             </p>
@@ -373,31 +373,31 @@
                         <form id="options" action="#">
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt1" name="answer10" type="radio" value="1"/>
                                 <span>1 - Strongly disagree</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt2" name="answer10" type="radio" value="2"/>
                                 <span>2 - Disagree</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt3" name="answer10" type="radio" value="3"/>
                                 <span>3 - Not sure</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt4" name="answer10" type="radio" value="4"/>
                                 <span>4 - Agree</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                <input name="group1" type="radio"/>
+                                <input class="opt5" name="answer10" type="radio" value="5"/>
                                 <span>5 - Strongly agree</span>
                                 </label>
                             </p>
@@ -405,51 +405,31 @@
                     </div>
                 </div>                
             </div>
-            <!-- Modal Trigger -->
-            <button data-target="modal1" class="btn modal-trigger">View Best Match</button>
+            <input id="submitButton" class="button is-danger" type="submit" value="Submit">
+            <input class="button" type="reset" value="Cancel">
             <!-- Modal -->
-            <div id="modal" style="visibility:hidden">
-                <div class="row">
-                    <div class="col s12 m7">
-                        <div class="card">
-                            <div class="card-image">
-                                <img id="person_photo" src="">
-                                <span id="person_name" class="card-title"></span>
-                            </div>
-                            <div class="card-content">
-                                <p id="person_summary"></p>
-                            </div>
-                            <div class="card-action">
-                                <a href="#">View profile</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>            
+            <div id="bestMatch" class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">We think you'll hit it off!</p>
+                        <button class="delete" aria-label="close"></button>
+                    </header>
+                    <section class="modal-card-body">
+                        <img class="pic">
+                        <p class="bio"></p>
+                    <!-- Content ... -->
+                    </section>
+                    <footer class="modal-card-foot">
+                        <button class="button is-danger">View Profile</button>
+                        <button class="button">Cancel</button>
+                    </footer>
+                </div>
             </div>
         </main>
-        <footer>
+        <footer class="footer">
             <div class="container">
-                <div class="row">
-                    <div class="col l6 s12">
-                        <h5 class="white-text">Footer Content</h5>
-                        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-                    </div>
-                    <div class="col l4 offset-l2 s12">
-                        <h5 class="white-text">Links</h5>
-                        <!-- <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                        </ul> -->
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <div class="container">
-                    © 2019 Julie Ragsdale
-                    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-                </div>
+                © 2019 Julie Ragsdale
             </div>
         </footer>
         <!-- Compiled and minified JavaScript -->
