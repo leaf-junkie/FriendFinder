@@ -1,34 +1,69 @@
 $(document).ready(function(){
-    // Once you've found the current user's most compatible 
-    // friend, display the result as a modal pop-up.
+    // Once you've found the current user's most compatible friend, display the result as a modal pop-up.
+    // The modal should display both the name and picture of the closest match.
+    // $('#submitButton').on('click', function(event) {
+    //     $('#bestMatch').addClass('is-active');
+    // });
 
-    $('#submitButton').on('click', function(event) {
-        $('#bestMatch').addClass('is-active');
+    $(function() {
+        // Set up an event listener for the contact form.
+        $(form).submit(function(event) {
+            // Stop the browser from submitting the form.
+            event.preventDefault();
+
+            // Get the form.
+            var form = $('#form');
+            var formData = form.serialize();
+        
+            // Submit the form using AJAX.
+            $.ajax({
+                type: 'POST',
+                url: `/api/friends?${formData}`
+            }).done(function(response) {
+                // Server should respond with best match
+                console.log(response);
+                // Make sure that the formMessages div has the 'success' class.
+                $(formMessages).removeClass('error');
+                $(formMessages).addClass('success');
+            
+                // Set the message text.
+                $(formMessages).text(response);
+            
+                // Clear the form.
+                $('#name').val('');
+                $('#email').val('');
+                $('#message').val('');
+            });
+        });
+
     });
 
-    // The modal should display both the name and picture 
-    // of the closest match.
+    $('.closeModal').on('click', function(event) {
+        $('#bestMatch').removeClass('is-active');
+    })
 
-
-// Tally up responses from survey
-// function computeScore() {
-//     let score = 0;
-//     for (q = 0; q = 10; q++) {
-//         if ($('.opt1').click()) {
-//             score += 1;
-//         } else if ($('.opt2').click()) {
-//             score +=2;
-//         } else if ($('.opt3').click()) {
-//             score += 3;
-//         } else if ($('.opt4').click()) {
-//             score += 4;
-//         } else ($('.opt5').click()) {
-//             score += 5;
-//         }
-//     }
-//     console.log(`Your score: ${score}`);
-// }
-// computeScore();
-
-
+    // Tally up responses from survey
+    // let score = 0;
+    // function computeScore() {
+    //     for (q = 0; q = 10; q++) {
+    //         switch() {
+    //             case $('.opt1'):
+    //                 score += 1;
+    //                 break;
+    //             case $('.opt2'):
+    //                 score += 2;
+    //                 break
+    //             case $('.opt3'):
+    //                 score += 3;
+    //                 break;
+    //             case $('.opt4'):
+    //                 score += 4;
+    //                 break;
+    //             case $('.opt5'):
+    //                 score += 5;
+    //                 break;
+    //     }
+    //     console.log(`Your score: ${score}`);
+    // }
+    // computeScore();
 });                
