@@ -1,50 +1,9 @@
 $(document).ready(function(){
     // Once you've found the current user's most compatible friend, display the result as a modal pop-up.
-    // The modal should display both the name and picture of the closest match.
-    
-    // $('#submitButton').on('click', function(event) {
-    //     // event.preventDefault();
-
-    //     $('#bestMatch').addClass('is-active');
-    //     $(function() {
-    //         // Get the form
-    //         var form = $('#form');
-    //         // Set up an event listener for the contact form
-    //         $(form).submit(function(event) {
-    
-    //             var formData = form.serialize();
-            
-    //             // Submit the form using AJAX
-    //             $.ajax({
-    //                 type: 'POST',
-    //                 url: `/api/friends?${formData}`
-    //             }).done(function(response) {
-    //                 // Server should respond with best match
-    //                 console.log(response);
-    //                 // Make sure that the formMessages div has the 'success' class.
-    //                 $(formMessages).removeClass('error');
-    //                 $(formMessages).addClass('success');
-                
-    //                 // Set the message text.
-    //                 $(formMessages).text(response);
-                
-    //                 // Clear the form.
-    //                 $('.opt1').val('');
-    //                 $('.opt2').val('');
-    //                 $('.opt3.').val('');
-    //                 $('.opt4').val('');
-    //                 $('.opt5.').val('');
-    //             });
-    //         });
-    //     });
-    // });
-
     $('#submitButton').on('click', function(event) {
         event.preventDefault();
 
-        // Get the form
         var form = $('#form');
-        // Set up an event listener for the contact form
         
         var formData = form.serialize();
         
@@ -53,20 +12,28 @@ $(document).ready(function(){
             type: 'POST',
             url: `/api/friends?${formData}`
         }).done(function(response) {
-            // Server should respond with best match
+            // Server should respond with the best match
             console.log(response);
+            
+            // TODO:The modal should display both the name and picture of the closest match.
             
             $('#bestMatch').addClass('is-active');
             
-            // Clear the form.
-            // $('.opt1').val('');
-            // $('.opt2').val('');
-            // $('.opt3.').val('');
-            // $('.opt4').val('');
-            // $('.opt5.').val('');
+            // TODO: Clear the form
+            $('input[name=answer1]').attr('checked',false);
+            $('input[name=answer2]').attr('checked',false);
+            $('input[name=answer3]').attr('checked',false);
+            $('input[name=answer4]').attr('checked',false);
+            $('input[name=answer5]').attr('checked',false);
+            $('input[name=answer6]').attr('checked',false);
+            $('input[name=answer7]').attr('checked',false);
+            $('input[name=answer8]').attr('checked',false);
+            $('input[name=answer9]').attr('checked',false);
+            $('input[name=answer10]').attr('checked',false);
         });
     });
-
+    
+    // Close the modal
     $('.closeModal').on('click', function(event) {
         $('#bestMatch').removeClass('is-active');
     });
