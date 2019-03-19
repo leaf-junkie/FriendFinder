@@ -134,8 +134,6 @@ function findBestMatch(surveyResults) {
                 currentDifference += Math.abs(
                     people[i].scores[j] - surveyResults[`answer${j}`]
                 );
-            } else {
-                console.log(`Cant calculate difference, user didnt answer: ${j}`);
             }
         }
         if (minDifference < 0 || currentDifference < minDifference) {

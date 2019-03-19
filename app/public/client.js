@@ -26,6 +26,10 @@ $(document).ready(function(){
     $('.closeModal').on('click', function(event) {
         // Clear the form
         $('input[type="radio"]').prop('checked', false);
+        // Clear the previous match
+        $('.bmPic').empty();
+        $('.bmName').empty();
+        $('.bmBio').empty();
         // Close the modal
         $('#bestMatch').removeClass('is-active');
     });
