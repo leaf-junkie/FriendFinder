@@ -3,9 +3,9 @@ $(document).ready(function(){
     $('#submitButton').on('click', function(event) {
         event.preventDefault();
 
-        var form = $('#form');
+        const form = $('#form');
         
-        var formData = form.serialize();
+        const formData = form.serialize();
         
         // Submit the form using AJAX
         $.ajax({
@@ -15,8 +15,10 @@ $(document).ready(function(){
             // Server should respond with the best match
             console.log(response);
             
-            // TODO:The modal should display both the name and picture of the closest match.
-            
+            // Modal: Display the picture, name, and bio of the closest match
+            $('.bmPic').append(`<img src=${response.photo}>`);
+            $('.bmName').append(response.name);
+            $('.bmBio').append(response.bio);
             $('#bestMatch').addClass('is-active');
             
             // TODO: Clear the form
