@@ -20,23 +20,14 @@ $(document).ready(function(){
             $('.bmName').append(response.name);
             $('.bmBio').append(response.bio);
             $('#bestMatch').addClass('is-active');
-            
-            // TODO: Clear the form
-            $('input[name=answer1]').attr('checked',false);
-            $('input[name=answer2]').attr('checked',false);
-            $('input[name=answer3]').attr('checked',false);
-            $('input[name=answer4]').attr('checked',false);
-            $('input[name=answer5]').attr('checked',false);
-            $('input[name=answer6]').attr('checked',false);
-            $('input[name=answer7]').attr('checked',false);
-            $('input[name=answer8]').attr('checked',false);
-            $('input[name=answer9]').attr('checked',false);
-            $('input[name=answer10]').attr('checked',false);
         });
     });
     
-    // Close the modal
     $('.closeModal').on('click', function(event) {
+        // Clear the form
+        $('input[type="radio"]').prop('checked', false);
+        // Close the modal
         $('#bestMatch').removeClass('is-active');
     });
+
 });
