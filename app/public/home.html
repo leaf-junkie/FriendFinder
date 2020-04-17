@@ -9,33 +9,66 @@
     </head>
     <body>
         <header>
-            <section id="homeBackground" class="hero is-danger is-bold is-fullheight">
-                <div class="hero-body">
-                    <div class="container column is-half">
-                        <h1 class="title">
-                            Kinspir
-                        </h1>
-                        <h2 class="subtitle">
-                            Make new friends today!
-                        </h2>
-                        <h2 class="subtitle">
-                            At Kinspir, we believe friendship is truly special. 
-                            We use revolutionary algorithms to match you with 
-                            kindred spirits anywhere in the web! You'll find that 
-                            our survey is made with a proprietary blend of all of 
-                            the most important questions, and we feel confident 
-                            about our ability to make new friends for you. So, what 
-                            are you waiting for? Take the <a href="survey">
-                            survey</a> to find your new bestie (or three)!
-                        </h2>
-                        <div class="container">
-                            <a href="profile">Profile</a>
-                            <a href="survey">Survey</a>
+            <section id="homeBackground" class="hero is-warning is-large is-bold">
+
+                <!-- Hero head: will stick at the top -->
+                <div class="hero-head">
+                    <nav class="navbar">
+                    <div class="container">
+                        <div class="navbar-brand">
+                        <a class="navbar-item">
+                            <h1 class="title is-size-1">Kinspir</h1>
+                        </a>
+                        <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                        </div>
+                        <div id="navbarMenuHeroA" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a class="navbar-item is-active">Home</a>
+                            <a class="navbar-item" href="profile">Profile</a>
+                            <a class="navbar-item" href="survey">Survey</a>
+                            <span class="navbar-item">
+                            <a class="button is-warning is-inverted" href="https://github.com/leaf-junkie/FriendFinder" target="_blank">
+                                <span class="icon"><i class="fab fa-github"></i></span>
+                                <span>Code</span>
+                            </a>
+                            </span>
+                        </div>
                         </div>
                     </div>
+                    </nav>
                 </div>
+                <div class="hero-body"></div>
             </section>
         </header>
+
+        <main>
+            <div class="container column is-half">
+                <h2 class="subtitle">
+                    Make new friends today!
+                </h2>
+                <h2 class="subtitle">
+                    At Kinspir, we believe friendship is truly special. 
+                    We use revolutionary algorithms to match you with 
+                    kindred spirits anywhere in the web! You'll find that 
+                    our survey is made with a proprietary blend of all of 
+                    the most important questions, and we feel confident 
+                    about our ability to make new friends for you. So, what 
+                    are you waiting for? Fill out our survey to find your 
+                    new bestie!
+                </h2>
+            </div>
+        </main>
+
+        <footer class="footer is-warning">
+            <div class="content has-text-centered">
+              <p><strong>Kinspir</strong> © 2019 <a href="https://github.com/leaf-junkie" target="_blank">Julie Ragsdale</a></p>
+            </div>
+        </footer>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </body>
 </html>

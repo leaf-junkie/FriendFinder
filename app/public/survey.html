@@ -9,413 +9,476 @@
     </head>
     <body>
         <header>
-            <section class="hero is-danger is-bold">
-                <div class="hero-body">
-                    <div class="container has-text-center">
-                        <h1 class="title">
-                            Kinspir
-                        </h1>
+            <section class="hero is-warning is-bold">
+                <!-- Hero head: will stick at the top -->
+                <div class="hero-head">
+                    <nav class="navbar">
+                    <div class="container">
+                        <div class="navbar-brand">
+                        <a class="navbar-item">
+                            <h1 class="title is-size-1">Kinspir</h1>
+                        </a>
+                        <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                        </div>
+                        <div id="navbarMenuHeroA" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a class="navbar-item" href="/">Home</a>
+                            <a class="navbar-item" href="profile">Profile</a>
+                            <a class="navbar-item is-active" href="survey">Survey</a>
+                            <span class="navbar-item">
+                            <a class="button is-warning is-inverted" href="https://github.com/leaf-junkie/FriendFinder" target="_blank">
+                                <span class="icon"><i class="fab fa-github"></i></span>
+                                <span>Code</span>
+                            </a>    
+                            </span>
+                        </div>
+                        </div>
                     </div>
-                    <div class="hero-foot">
-                        <nav class="tabs">
-                            <div class="container">
-                                <ul>
-                                    <li><a href="/">Home</a></li>
-                                    <li><a href="profile">Profile</a></li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
+                    </nav>
                 </div>
-            </section>     
+                <div class="hero-body"></div>
         </header>
-        <main class="container section">
-            <h1 class="title">Survey</h1>
-            <h4 class="subtitle">Answer these questions to find your best match!</h4>
-            <!-- Survey -->
-            <div id="questions">
-                <form id="form" action="#">
-                    <div class="question-div">
-                        <h5 class="question">You feel obligated to help your fellow human beings.</h5>
-                        <div class="options-div">
-                            <p>
-                                <label class="radio">
-                                <input class="opt1" name="answer1" type="radio" value="1" required/>
-                                <span>1 - Strongly disagree</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label class="radio">
-                                <input class="opt2" name="answer1" type="radio" value="2"/>
-                                <span>2 - Disagree</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label class="radio">
-                                <input class="opt3" name="answer1" type="radio" value="3"/>
-                                <span>3 - Not sure</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label class="radio">
-                                <input class="opt4" name="answer1" type="radio" value="4"/>
-                                <span>4 - Agree</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label class="radio">
-                                <input class="opt5" name="answer1" type="radio" value="5" />
-                                <span>5 - Strongly agree</span>
-                                </label>
-                            </p>
+        <main class="container">
+            <section class="section">
+                <h1 class="title">Survey</h1>
+                <h4 class="subtitle">Answer these questions to find your best match!</h4>
+                
+                <!-- Survey -->
+                <!-- <section class="section" style="display: flex; justify-content: center;">
+                    <div class="columns">
+                        <article class="column message">
+                            <div class="message-header">
+                            <p>Lorem ipsum...</p>
+                            <button class="delete" aria-label="delete"></button>
+                            </div>
+                            <div class="message-body">
+                                <div class="options-div">
+                                    <p>
+                                        <label class="radio">
+                                        <input class="opt1" name="answer1" type="radio" value="1" required/>
+                                        <span>1 - Strongly disagree</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label class="radio">
+                                        <input class="opt2" name="answer1" type="radio" value="2"/>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label class="radio">
+                                        <input class="opt3" name="answer1" type="radio" value="3"/>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label class="radio">
+                                        <input class="opt4" name="answer1" type="radio" value="4"/>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label class="radio">
+                                        <input class="opt5" name="answer1" type="radio" value="5" />
+                                        <span>5 - Strongly agree</span>
+                                        </label>
+                                    </p>
+                                </div>    
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <progress class="progress is-info" value="15" max="100">15%</progress> -->
+
+                <div id="questions">
+                    <form id="form" action="#">
+                        <div class="question-div">
+                            <h5 class="question">You feel obligated to help your fellow human beings.</h5>
+                            <div class="options-div">
+                                <p>
+                                    <label class="radio">
+                                    <input class="opt1" name="answer1" type="radio" value="1" required/>
+                                    <span>1 - Strongly disagree</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label class="radio">
+                                    <input class="opt2" name="answer1" type="radio" value="2"/>
+                                    <span>2 - Disagree</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label class="radio">
+                                    <input class="opt3" name="answer1" type="radio" value="3"/>
+                                    <span>3 - Not sure</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label class="radio">
+                                    <input class="opt4" name="answer1" type="radio" value="4"/>
+                                    <span>4 - Agree</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label class="radio">
+                                    <input class="opt5" name="answer1" type="radio" value="5" />
+                                    <span>5 - Strongly agree</span>
+                                    </label>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="question-div">
-                        <h5 class="question">Astrological signs are important in a match.</h5>
-                        <div class="options-div">
-                            <p>
-                                <label>
-                                <input class="opt1" name="answer2" type="radio" value="1" required/>
-                                <span>1 - Strongly disagree</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt2" name="answer2" type="radio" value="2"/>
-                                <span>2 - Disagree</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt3" name="answer2" type="radio" value="3"/>
-                                <span>3 - Not sure</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt4" name="answer2" type="radio" value="4"/>
-                                <span>4 - Agree</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt5" name="answer2" type="radio" value="5"/>
-                                <span>5 - Strongly agree</span>
-                                </label>
-                            </p>
+                        <div class="question-div">
+                            <h5 class="question">Astrological signs are important in a match.</h5>
+                            <div class="options-div">
+                                <p>
+                                    <label>
+                                    <input class="opt1" name="answer2" type="radio" value="1" required/>
+                                    <span>1 - Strongly disagree</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt2" name="answer2" type="radio" value="2"/>
+                                    <span>2 - Disagree</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt3" name="answer2" type="radio" value="3"/>
+                                    <span>3 - Not sure</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt4" name="answer2" type="radio" value="4"/>
+                                    <span>4 - Agree</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt5" name="answer2" type="radio" value="5"/>
+                                    <span>5 - Strongly agree</span>
+                                    </label>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="question-div">
-                        <h5 class="question">Climate change is a real and severe issue we are currently facing.</h5>
-                        <div class="options-div">
-                            <p>
-                                <label>
-                                <input class="opt1" name="answer3" type="radio" value="1" required/>
-                                <span>1 - Strongly disagree</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt2" name="answer3" type="radio" value="2"/>
-                                <span>2 - Disagree</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt3" name="answer3" type="radio" value="3"/>
-                                <span>3 - Not sure</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt4" name="answer3" type="radio" value="4"/>
-                                <span>4 - Agree</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt5" name="answer3" type="radio" value="5"/>
-                                <span>5 - Strongly agree</span>
-                                </label>
-                            </p>
+                        <div class="question-div">
+                            <h5 class="question">Climate change is a real and severe issue we are currently facing.</h5>
+                            <div class="options-div">
+                                <p>
+                                    <label>
+                                    <input class="opt1" name="answer3" type="radio" value="1" required/>
+                                    <span>1 - Strongly disagree</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt2" name="answer3" type="radio" value="2"/>
+                                    <span>2 - Disagree</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt3" name="answer3" type="radio" value="3"/>
+                                    <span>3 - Not sure</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt4" name="answer3" type="radio" value="4"/>
+                                    <span>4 - Agree</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt5" name="answer3" type="radio" value="5"/>
+                                    <span>5 - Strongly agree</span>
+                                    </label>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="question-div">
-                        <h5 class="question">Dinosaurs are (well, were) real.</h5>
-                        <div class="options-div">
-                            <p>
-                                <label>
-                                <input class="opt1" name="answer4" type="radio" value="1" required/>
-                                <span>1 - Strongly disagree</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt2" name="answer4" type="radio" value="2"/>
-                                <span>2 - Disagree</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt3" name="answer4" type="radio" value="3"/>
-                                <span>3 - Not sure</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt4" name="answer4" type="radio" value="4"/>
-                                <span>4 - Agree</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt5" name="answer4" type="radio" value="5"/>
-                                <span>5 - Strongly agree</span>
-                                </label>
-                            </p>
+                        <div class="question-div">
+                            <h5 class="question">Dinosaurs are (well, were) real.</h5>
+                            <div class="options-div">
+                                <p>
+                                    <label>
+                                    <input class="opt1" name="answer4" type="radio" value="1" required/>
+                                    <span>1 - Strongly disagree</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt2" name="answer4" type="radio" value="2"/>
+                                    <span>2 - Disagree</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt3" name="answer4" type="radio" value="3"/>
+                                    <span>3 - Not sure</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt4" name="answer4" type="radio" value="4"/>
+                                    <span>4 - Agree</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt5" name="answer4" type="radio" value="5"/>
+                                    <span>5 - Strongly agree</span>
+                                    </label>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="question-div">
-                        <h5 class="question">Separation of church and state is important.'</h5>
-                        <div class="options-div">
-                            <p>
-                                <label>
-                                <input class="opt1" name="answer5" type="radio" value="1" required/>
-                                <span>1 - Strongly disagree</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt2" name="answer5" type="radio" value="2"/>
-                                <span>2 - Disagree</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt3" name="answer5" type="radio" value="3"/>
-                                <span>3 - Not sure</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt4" name="answer5" type="radio" value="4"/>
-                                <span>4 - Agree</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt5" name="answer5" type="radio" value="5"/>
-                                <span>5 - Strongly agree</span>
-                                </label>
-                            </p>
+                        <div class="question-div">
+                            <h5 class="question">Separation of church and state is important.'</h5>
+                            <div class="options-div">
+                                <p>
+                                    <label>
+                                    <input class="opt1" name="answer5" type="radio" value="1" required/>
+                                    <span>1 - Strongly disagree</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt2" name="answer5" type="radio" value="2"/>
+                                    <span>2 - Disagree</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt3" name="answer5" type="radio" value="3"/>
+                                    <span>3 - Not sure</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt4" name="answer5" type="radio" value="4"/>
+                                    <span>4 - Agree</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt5" name="answer5" type="radio" value="5"/>
+                                    <span>5 - Strongly agree</span>
+                                    </label>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="question-div">
-                        <h5 class="question">If you saw someone shoplifting, you would turn them in.</h5>
-                        <div class="options-div">
-                            <p>
-                                <label>
-                                <input class="opt1" name="answer6" type="radio" value="1" required/>
-                                <span>1 - Strongly disagree</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt2" name="answer6" type="radio" value="2"/>
-                                <span>2 - Disagree</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt3" name="answer6" type="radio" value="3"/>
-                                <span>3 - Not sure</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt4" name="answer6" type="radio" value="4"/>
-                                <span>4 - Agree</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt5" name="answer6" type="radio" value="5"/>
-                                <span>5 - Strongly agree</span>
-                                </label>
-                            </p>
+                        <div class="question-div">
+                            <h5 class="question">If you saw someone shoplifting, you would turn them in.</h5>
+                            <div class="options-div">
+                                <p>
+                                    <label>
+                                    <input class="opt1" name="answer6" type="radio" value="1" required/>
+                                    <span>1 - Strongly disagree</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt2" name="answer6" type="radio" value="2"/>
+                                    <span>2 - Disagree</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt3" name="answer6" type="radio" value="3"/>
+                                    <span>3 - Not sure</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt4" name="answer6" type="radio" value="4"/>
+                                    <span>4 - Agree</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt5" name="answer6" type="radio" value="5"/>
+                                    <span>5 - Strongly agree</span>
+                                    </label>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="question-div">
-                        <h5 class="question">You think that advanced primates, like chimps and apes, should be afforded some degree of "human" rights.</h5>
-                        <div class="options-div">
-                            <p>
-                                <label>
-                                <input class="opt1" name="answer7" type="radio" value="1" required/>
-                                <span>1 - Strongly disagree</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt2" name="answer7" type="radio" value="2"/>
-                                <span>2 - Disagree</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt3" name="answer7" type="radio" value="3"/>
-                                <span>3 - Not sure</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt4" name="answer7" type="radio" value="4"/>
-                                <span>4 - Agree</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt5" name="answer7" type="radio" value="5"/>
-                                <span>5 - Strongly agree</span>
-                                </label>
-                            </p>
+                        <div class="question-div">
+                            <h5 class="question">You think that advanced primates, like chimps and apes, should be afforded some degree of "human" rights.</h5>
+                            <div class="options-div">
+                                <p>
+                                    <label>
+                                    <input class="opt1" name="answer7" type="radio" value="1" required/>
+                                    <span>1 - Strongly disagree</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt2" name="answer7" type="radio" value="2"/>
+                                    <span>2 - Disagree</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt3" name="answer7" type="radio" value="3"/>
+                                    <span>3 - Not sure</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt4" name="answer7" type="radio" value="4"/>
+                                    <span>4 - Agree</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt5" name="answer7" type="radio" value="5"/>
+                                    <span>5 - Strongly agree</span>
+                                    </label>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="question-div">
-                        <h5 class="question">Overall, you believe that capitalism has made the world a better place.</h5>
-                        <div class="options-div">
-                            <p>
-                                <label>
-                                <input class="opt1" name="answer8" type="radio" value="1" required/>
-                                <span>1 - Strongly disagree</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt2" name="answer8" type="radio" value="2"/>
-                                <span>2 - Disagree</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt3" name="answer8" type="radio" value="3"/>
-                                <span>3 - Not sure</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt4" name="answer8" type="radio" value="4"/>
-                                <span>4 - Agree</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt5" name="answer8" type="radio" value="5"/>
-                                <span>5 - Strongly agree</span>
-                                </label>
-                            </p>
+                        <div class="question-div">
+                            <h5 class="question">Overall, you believe that capitalism has made the world a better place.</h5>
+                            <div class="options-div">
+                                <p>
+                                    <label>
+                                    <input class="opt1" name="answer8" type="radio" value="1" required/>
+                                    <span>1 - Strongly disagree</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt2" name="answer8" type="radio" value="2"/>
+                                    <span>2 - Disagree</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt3" name="answer8" type="radio" value="3"/>
+                                    <span>3 - Not sure</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt4" name="answer8" type="radio" value="4"/>
+                                    <span>4 - Agree</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt5" name="answer8" type="radio" value="5"/>
+                                    <span>5 - Strongly agree</span>
+                                    </label>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="question-div">
-                        <h5 class="question">Most people would prefer to be a lot more like you.</h5>
-                        <div class="options-div">
-                            <p>
-                                <label>
-                                <input class="opt1" name="answer9" type="radio" value="1" required/>
-                                <span>1 - Strongly disagree</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt2" name="answer9" type="radio" value="2"/>
-                                <span>2 - Disagree</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt3" name="answer9" type="radio" value="3"/>
-                                <span>3 - Not sure</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt4" name="answer9" type="radio" value="4"/>
-                                <span>4 - Agree</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt5" name="answer9" type="radio" value="5"/>
-                                <span>5 - Strongly agree</span>
-                                </label>
-                            </p>
+                        <div class="question-div">
+                            <h5 class="question">Most people would prefer to be a lot more like you.</h5>
+                            <div class="options-div">
+                                <p>
+                                    <label>
+                                    <input class="opt1" name="answer9" type="radio" value="1" required/>
+                                    <span>1 - Strongly disagree</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt2" name="answer9" type="radio" value="2"/>
+                                    <span>2 - Disagree</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt3" name="answer9" type="radio" value="3"/>
+                                    <span>3 - Not sure</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt4" name="answer9" type="radio" value="4"/>
+                                    <span>4 - Agree</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt5" name="answer9" type="radio" value="5"/>
+                                    <span>5 - Strongly agree</span>
+                                    </label>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="question-div">
-                        <h5 class="question">The government should require children to be vaccinated for preventable diseases.</h5>
-                        <div class="options-div">
-                            <p>
-                                <label>
-                                <input class="opt1" name="answer10" type="radio" value="1" required/>
-                                <span>1 - Strongly disagree</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt2" name="answer10" type="radio" value="2"/>
-                                <span>2 - Disagree</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt3" name="answer10" type="radio" value="3"/>
-                                <span>3 - Not sure</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt4" name="answer10" type="radio" value="4"/>
-                                <span>4 - Agree</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                <input class="opt5" name="answer10" type="radio" value="5"/>
-                                <span>5 - Strongly agree</span>
-                                </label>
-                            </p>
-                            <br>
-                            <input id="submitButton" class="button is-danger" type="submit" value="Submit">
-                            <input class="button" type="reset" value="Cancel">
-                        </form>
-                    </div>
-                </div>                
-            </div>
-            <!-- Modal -->
-            <div id="bestMatch" class="modal">
-                <div class="modal-background"></div>
-                <div class="modal-card">
-                    <header class="modal-card-head">
-                        <p class="modal-card-title">We think you'll hit it off!</p>
-                        <button class="delete closeModal" aria-label="close"></button>
-                    </header>
-                    <section class="modal-card-body">
-                        <div class="bmPic container"></div>
-                        <p class="bmName is-size-4"></p>
-                        <p class="bmBio is-italic"></p>
-                    <!-- Content ... -->
-                    </section>
-                    <footer class="modal-card-foot">
-                        <button class="button closeModal is-danger">Okay</button>
-                        <button class="button closeModal">Cancel</button>
-                    </footer>
+                        <div class="question-div">
+                            <h5 class="question">The government should require children to be vaccinated for preventable diseases.</h5>
+                            <div class="options-div">
+                                <p>
+                                    <label>
+                                    <input class="opt1" name="answer10" type="radio" value="1" required/>
+                                    <span>1 - Strongly disagree</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt2" name="answer10" type="radio" value="2"/>
+                                    <span>2 - Disagree</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt3" name="answer10" type="radio" value="3"/>
+                                    <span>3 - Not sure</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt4" name="answer10" type="radio" value="4"/>
+                                    <span>4 - Agree</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input class="opt5" name="answer10" type="radio" value="5"/>
+                                    <span>5 - Strongly agree</span>
+                                    </label>
+                                </p>
+                                <br>
+                                <input id="submitButton" class="button is-info" type="submit" value="Submit">
+                                <input class="button" type="reset" value="Cancel">
+                            </form>
+                        </div>
+                    </div>                
                 </div>
-            </div>
+
+                <!-- Modal -->
+                <div id="bestMatch" class="modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-card">
+                        <header class="modal-card-head">
+                            <p class="modal-card-title">We think you'll hit it off!</p>
+                            <button class="delete closeModal" aria-label="close"></button>
+                        </header>
+                        <section class="modal-card-body">
+                            <div class="bmPic container"></div>
+                            <p class="bmName is-size-4"></p>
+                            <p class="bmBio is-italic"></p>
+                        </section>
+                        <footer class="modal-card-foot">
+                            <button class="button closeModal is-info">Okay</button>
+                            <button class="button closeModal">Cancel</button>
+                        </footer>
+                    </div>
+                </div>
+            </section>
         </main>
-        <footer>
-            <div class="container">
-                © 2019 Julie Ragsdale
+
+        <footer class="footer">
+            <div class="content has-text-centered">
+              <p><strong>Kinspir</strong> © 2019 <a href="https://github.com/leaf-junkie" target="_blank">Julie Ragsdale</a></p>
             </div>
         </footer>
+
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="client.js"></script>
         <!-- <script src="../public/client.js"></script> -->

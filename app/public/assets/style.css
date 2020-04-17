@@ -14,8 +14,18 @@ footer {
     bottom: 0;
 }
 
+#homeBackground {
+    background-image: url("../assets/friends-yellowbg.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+#questions {
+    margin-bottom: 16vh;
+}
+
 .question-div {
-    margin-bottom: 1rem;
+    margin-bottom: 2vh;
 }
 
 /* style all elements with a required attribute */

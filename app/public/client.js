@@ -1,5 +1,6 @@
 $(document).ready(function(){
     // Once you've found the current user's most compatible friend, display the result as a modal pop-up.
+    document.getElementsByClassName("radio").required = true;
     $('#submitButton').on('click', function(event) {
         event.preventDefault();
 
