@@ -1,5 +1,12 @@
 $(document).ready(function(){
 
+    // Check for click events on the navbar burger icon
+    $(".navbar-burger").on("click", function() {
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        $(".navbar-burger").toggleClass("is-active");
+        $(".navbar-menu").toggleClass("is-active");
+    });
+
     // Purpose: Grabs the name that the user entered into the welcome modal
     //          and stores it in local storage. This is sort of a proxy for
     //          authentication and allows the profile page to be customized. 
