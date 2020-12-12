@@ -1,8 +1,13 @@
 $(document).ready(function(){
 
-    // Check for click events on the navbar burger icon
+    // Purpose: Check for click events on the modal submit button
+    $(".submitNameBtn").on("click", function(event) {
+        event.preventDefault();        
+        getName();
+    });
+
+    // Purpose: Check for click events on the navbar burger icon
     $(".navbar-burger").on("click", function() {
-        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
         $(".navbar-burger").toggleClass("is-active");
         $(".navbar-menu").toggleClass("is-active");
     });
@@ -11,10 +16,7 @@ $(document).ready(function(){
     //          and stores it in local storage. This is sort of a proxy for
     //          authentication and allows the profile page to be customized. 
     function getName() {
-        // if there is a name continue, else display error msg to user
         if ($("#welcomeModal .nameField input").val()) {
-
-            // Close the modal
             $("#welcomeModal").removeClass("is-active");
         }
         else {
@@ -22,16 +24,8 @@ $(document).ready(function(){
         }
     }
 
-    // Purpose: Event listener for the submit button on the welcome modal.
-    $(".submitNameBtn").on("click", function(event) {
-        event.preventDefault();        
-        getName();
-    });
-
-
-    // ----------------------------------------------------------------------------
-    // Once you've found the current user's most compatible friend, 
-    // display the result as a modal pop-up.
+    // Purpose: Once you've found the current user's most compatible friend, 
+    //          display the result as a modal pop-up.
     document.getElementsByClassName("radio").required = true;
 
     $("#submitButton").on("click", function(event) {
@@ -40,12 +34,12 @@ $(document).ready(function(){
         const form = $("#form");
         const formData = form.serialize();
         
-        // Submit the form using AJAX
+        // Submit form
         $.ajax({
             type: "POST",
             url: `/api/friends?${formData}`
         }).done(function(response) {            
-            // Modal: Display the picture, name, and bio of the closest match
+            // Display picture, name, and bio of closest match
             $(".bmPic").append(`<img src=${response.photo}>`);
             $(".bmName").append(response.name);
             $(".bmBio").append(response.bio);
@@ -53,17 +47,13 @@ $(document).ready(function(){
         });
     });
     
+
+    // Purpose: Clear form and previous match, close modal
     $(".closeModal").on("click", function(event) {
-        
-        // Clear the form
         $("input[type='radio']").prop("checked", false);
-        
-        // Clear the previous match
         $(".bmPic").empty();
         $(".bmName").empty();
         $(".bmBio").empty();
-        
-        // Close the modal
         $("#bestMatch").removeClass("is-active");
     });
 

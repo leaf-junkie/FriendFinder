@@ -6,13 +6,14 @@ body {
 
 main {
     flex: 1 0 auto;
+    margin-bottom: 10vh;
 }
 
 footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-    height: 75px;
+    padding: 1.5rem !important;
 }
 
 #homeBackground {
@@ -26,15 +27,6 @@ footer {
     margin-top: 2vh;
 }
 
-/* #welcomeModal {
-    display: flex;
-    flex-direction: row;
-}
-
-#welcomeModal .submitNameBtn {
-    justify-content: right;
-} */
-
 #questions {
     margin-bottom: 16vh;
 }
@@ -47,6 +39,10 @@ footer {
 :required {
     background: red;
 }
-/* #homeBackground {
-    background-image: url('friends.jpg');
-} */
+
+@media screen and (min-width: 900px) {
+    #survey {
+        width: 450px;
+        margin: 0 auto;
+    }
+}
