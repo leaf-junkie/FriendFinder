@@ -20,6 +20,20 @@ footer {
     background-size: cover;
 }
 
+.nameField,
+.submitNameBtn {
+    margin-top: 2vh;
+}
+
+/* #welcomeModal {
+    display: flex;
+    flex-direction: row;
+}
+
+#welcomeModal .submitNameBtn {
+    justify-content: right;
+} */
+
 #questions {
     margin-bottom: 16vh;
 }

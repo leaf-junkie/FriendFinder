@@ -47,28 +47,57 @@
 
         <main>
             <div class="container column is-half">
-                <h2 class="subtitle">
-                    Make new friends today!
-                </h2>
+                <h1 class="title">Kinspir</h1>
+                <h2 class="subtitle">Make new friends today</h2>
                 <h2 class="subtitle">
                     At Kinspir, we believe friendship is truly special. 
                     We use revolutionary algorithms to match you with 
-                    kindred spirits anywhere in the web! You'll find that 
-                    our survey is made with a proprietary blend of all of 
-                    the most important questions, and we feel confident 
-                    about our ability to make new friends for you. So, what 
-                    are you waiting for? Fill out our survey to find your 
-                    new bestie!
+                    kindred spirits anywhere in the world wide web! Simply 
+                    filly out our survey, which consists of a proprietary 
+                    blend of questions, and we'll match you with the perfect 
+                    pal. 
                 </h2>
+            </div>
+            <div id="welcomeModal" class="modal is-active">
+                <div class="modal-background"></div>
+                <div class="modal-content">
+
+                    <article class="message">
+                        <div class="message-header">
+                          <p class="is-size-4 has-text-white">Welcome to Kinspir!</p>
+                          <button class="delete" aria-label="delete"></button>
+                        </div>
+                        <div class="message-body">
+                          <p class="subtitle is-size-5">Please enter your name to continue.</p>
+                            <div class="nameField field is-horizontal">
+                                <div class="field-body">
+                                <div class="field">
+                                    <p class="control">
+                                    <input id="name" class="input is-rounded" type="text" placeholder="Name">
+                                    </p>
+                                </div>
+                                </div>
+                            </div>
+                            <button class="submitNameBtn button is-info is-rounded">Submit</button>
+                        </div>
+                    </article>
+
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
             </div>
         </main>
 
         <footer class="footer is-warning">
             <div class="content has-text-centered">
-              <p><strong>Kinspir</strong> © 2019 <a href="https://github.com/leaf-junkie" target="_blank">Julie Ragsdale</a></p>
+                <p>
+                    Kinspir
+                    <script>document.write(new Date().getFullYear())</script> 
+                    <a href="https://github.com/leaf-junkie" target="_blank">Julie Ragsdale</a>
+                </p>
             </div>
         </footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="client.js"></script>
     </body>
 </html>
